@@ -1,4 +1,8 @@
-let siteGen = new SiteGen(["Home", "Live", "Config", "Marker"])
+let siteGen = new SiteGen([
+
+    "Home", "Live", "Config",
+    "Marker", "Tile tool", "Elevation"
+])
 
 let logoPath = 'img/mapalchemy_logo_2016.svg'
 logoPath = null // TODO make logo
@@ -20,5 +24,7 @@ new Page_0(siteGen)
 new Page_1(siteGen)
 new Page_2(siteGen)
 new Page_3(siteGen)
+new Page_4(siteGen)
+new Page_5(siteGen)
 
 siteGen.showPage()

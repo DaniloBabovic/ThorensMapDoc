@@ -187,8 +187,8 @@ class Page_2 extends PageContent{
         t(`Elevation in the Thorens map is described `)
         l(
             "here.",
-            "http://www.mapalchemy.appspot.com/thorens_doc/index.html?page=1",
-            "new"
+            "index.html?page=5",
+            ""
         )
         t(`Note: documentation in this link is outdated except for elevation.`)
         post.addText( para ( ) )

@@ -8,6 +8,8 @@ class Page_5 extends PageContent{
         this.infojs()
         this.imageData()
         this.elevationForTile()
+
+        this.disqus ( "Elevation", 5)
     }
 
     terrainParty() {
@@ -62,23 +64,22 @@ class Page_5 extends PageContent{
 
 
         var code = new Code('js')
-        let code_txt = `let files_info = {
+        let code_txt = `"elevation_files_info" : {
 
-    "top_left": {
+     "top_left": {
 
-        friendlyName:  "Top-left Val Thorens",
-        file_name: "top_left_val_thorens.png",
-        point_1: "45.359689 6.596151",
-        point_2: "45.287823 6.493874",
-        url: 'http://terrain.party/api/export?name=top_left_val_thorens&box=6.596151,45.359689,6.493874,45.287823',
-        widthPX:  1081,
-        heightPX:  1081,
-        fromMeter: 1449,
-        toMeter: 2993
+         "friendlyName":  "Top-left Val Thorens",
+         "file_name": "top_left_val_thorens.png",
+         "point_1": "45.359689 6.596151",
+         "point_2": "45.287823 6.493874",
+         "url": "http://terrain.party/api/export?name=top_left_val_thorens&box=6.596151,45.359689,6.493874,45.287823",
+         "widthPX":  1081, "heightPX":  1081,
+         "fromMeter": 1449, "toMeter": 2993
+     },
 
-    },
+     "top_right": {
 
-    "top_right": {
+         "friendlyName":  "Top-right Val Thorens",
 
         ...
 `
@@ -176,5 +177,24 @@ class Page_5 extends PageContent{
                             + imgAndTxt.getText() +
                             `</div><br><br>
         `)
+    }
+
+    disqus ( name, pageNumber) {
+
+        const onDivInserted = ( ) => {
+
+            let disqus_identifier = "ThorensMapDoc" + name
+
+            let newUrl = this.siteGen.siteURL + "index.html?page=" + pageNumber
+
+            let newTitle = "Thorens Doc " + name
+
+            this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
+        }
+        let post = this.page.makePostSimple('', 40)
+        let {t, l, c, nl, div, para} = new TextBuilder().allMethods()
+        t('<div id="disqus_thread"></div>'); nl()
+        post.addText(para())
+        this.page.onInsert = () => onDivInserted ( )
     }
 }

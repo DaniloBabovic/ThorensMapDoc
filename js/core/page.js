@@ -5,6 +5,7 @@ class Page {
         this.siteGen = siteGen
         this.pageName = pageName
         this.posts = []
+        this.onInsert = null
     }
 
     loadXMLDoc(filename, onDone)
@@ -81,6 +82,11 @@ class Page {
         {
             this.posts[i].insert()
         }
+    }
+
+    onPageInsert ( ) {
+
+        if (this.onInsert != null) this.onInsert ( )
     }
 }
 

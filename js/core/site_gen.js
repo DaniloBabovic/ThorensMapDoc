@@ -106,9 +106,10 @@ class SiteGen {
     {
         function show(header, currentPage, footer)
         {
-            header.insert()
-            currentPage.insert()
-            footer.insert()
+            header.insert ( )
+            currentPage.insert ( )
+            footer.insert ( )
+            currentPage.onPageInsert ( )
         }
         let pageNumber = location.search.split('page=')[1]
         if(pageNumber === undefined) pageNumber = "-1"
@@ -142,7 +143,7 @@ class SiteGen {
                 this.currentPageIndex = i
                 this.currentPage = this.pages[i]
                 this.currentPage.insert()
-
+                this.currentPage.onPageInsert ( )
                 break
             }
         }

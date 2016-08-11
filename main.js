@@ -1,13 +1,20 @@
-let siteGen = new SiteGen([
 
-    "Home", "Live", "Config",
-    "Marker", "Tile tool", "Elevation"
+siteGen = new SiteGen([
+
+    "Home", "Live", "Config", "Marker",
+    "Tile tool", "Elevation", "Support"
 ])
 
 let logoPath = 'img/mapalchemy_logo_2016.svg'
 logoPath = null // TODO make logo
 
+let siteURL = "http://htmlpreview.github.io/?"
+siteURL +=  "https://raw.githubusercontent.com/DaniloBabovic/"
+siteURL +=  "ThorensMapDoc/master/"
+siteGen.siteURL = siteURL
 
+siteGen.disqus = new DisqusManager ( )
+siteGen.disqus.enabled = true
 
 function setGlobalSitePath ( _sitePath) {
 
@@ -26,5 +33,6 @@ new Page_2(siteGen)
 new Page_3(siteGen)
 new Page_4(siteGen)
 new Page_5(siteGen)
+new Page_6(siteGen)
 
 siteGen.showPage()

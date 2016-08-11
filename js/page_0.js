@@ -18,6 +18,8 @@ class Page_0 extends PageContent{
         this.reflector ( )
         this.wireframe ( )
         this.keyboard ( )
+
+        this.disqus ( )
     }
 
     post_1 ( ) {
@@ -48,7 +50,7 @@ class Page_0 extends PageContent{
 
     post_2 ( ) {
 
-        let post = this.page.makePostSimple('JavaScript map component', 20)
+        let post = this.page.makePostSimple('Thorens Map Documentation', 20)
         let {ul, t, l, c, nl, div, para} = new TextBuilder().allMethods()
 
         t(`Thorens Map is JavaScript map component for Web applications.`)
@@ -67,8 +69,10 @@ class Page_0 extends PageContent{
             so in the next version you will be enabled to set the map
             cover size in the config file.`); nl ()
 
-        t(`You can try live demo on the`)
+        //t(`You can try live demo on the`)
+        t(`To see map in action visit `)
         l("live page.", "index.html?page=1", "")
+        //t(`to see map in action.`)
         t(`Then, you can get familiar with map elements.`)
         post.addText(para())
     }
@@ -476,5 +480,24 @@ thorens_map.keyboard ()
          var txt = code.getText()
 
          post.addText(txt)
+   }
+
+   disqus ( ) {
+
+       const onDivInserted = ( ) => {
+
+           let disqus_identifier = "ThorensMapDoc"
+
+           let newUrl = this.siteGen.siteURL + "index.html?page=0"
+
+           let newTitle = "Thorens Doc"
+
+           this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
+       }
+       let post = this.page.makePostSimple('', 40)
+       let {t, l, c, nl, div, para} = new TextBuilder().allMethods()
+       t('<div id="disqus_thread"></div>'); nl()
+       post.addText(para())
+       this.page.onInsert = () => onDivInserted ( )
    }
 }

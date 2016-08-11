@@ -164,7 +164,7 @@ class SiteGen {
             }
         }
         else {
-            console.log( "this.sourceIsFile == true")
+            //console.log( "this.sourceIsFile == true")
             //window.location.href = 'index.html?page=' + this.currentPageIndex;
         }
     }

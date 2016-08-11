@@ -9,6 +9,7 @@ class Page_1 extends PageContent{
 
     disqus ( ) {
 
+        if ( this.siteGen.disqus.enabled == false )  return
         const onDivInserted = ( ) => {
 
             let disqus_identifier = "ThorensMapDocLive"

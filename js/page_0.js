@@ -484,6 +484,7 @@ thorens_map.keyboard ()
 
    disqus ( ) {
 
+       if ( this.siteGen.disqus.enabled == false )  return
        const onDivInserted = ( ) => {
 
            let disqus_identifier = "ThorensMapDoc"

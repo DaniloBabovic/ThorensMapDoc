@@ -14,7 +14,7 @@ siteURL +=  "ThorensMapDoc/master/"
 siteGen.siteURL = siteURL
 
 siteGen.disqus = new DisqusManager ( )
-siteGen.disqus.enabled = true
+siteGen.disqus.enabled = false
 
 function setGlobalSitePath ( _sitePath) {
 

@@ -125,15 +125,20 @@ class TextBuilder {
             }
             else if (part.type == "link") {
 
-                if (part.style != '')
-                {
+                if (part.style != '') {
+
                     part.style = ' style="' + part.style + '"'
+
                 }
+
                 if (part.inNewTab == 'new') {
+
                     text += '<a ' + part.style + ' target="_blank" href="' + part.url + '"> ' + part.text + ' </a>'
-                }
-                else {
-                    text += '<a ' + part.style + ' href="' + part.url + '"> ' + part.text + ' </a>'
+
+                } else {
+
+                    text += '<a ' + part.style + ' href="' + sitePath + part.url + '"> ' + part.text + ' </a>'
+                    
                 }
             }
         }

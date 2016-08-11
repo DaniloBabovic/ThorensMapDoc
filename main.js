@@ -1,6 +1,16 @@
 let siteGen = new SiteGen(["Home", "Live", "Config", "Marker"])
 
-siteGen.createHeader(  'img/mapalchemy_logo_2016.svg',
+let logoPath = 'img/mapalchemy_logo_2016.svg'
+logoPath = null // TODO make logo
+
+
+
+function setGlobalSitePath ( _sitePath) {
+
+    sitePath = _sitePath
+}
+
+siteGen.createHeader(   logoPath,
                         'url("img/earth_background.png")',
                         'Thorens Map',
                         280,

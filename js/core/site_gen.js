@@ -9,6 +9,9 @@ class SiteGen {
         this.pageNames = pageNames
         this.pages = []
         this.footer = null
+
+        this.sitePath = ''
+
         this.setPath()
         this.header = null
         this.sourceIsFile = false
@@ -27,26 +30,35 @@ class SiteGen {
 
 
     setPath() {
+
         this.filename = ''
+
+
         this.url = document.location.toString()
         let index  = this.url.lastIndexOf("/");
 
         if (index > 0) {
 
-            this.filename = this.url.substring(index + 1);
-        }
-        else {
+            this.filename = this.url.substring(index + 1)
+            this.sitePath = this.url.substring(0, index + 1)
+            setGlobalSitePath ( this.sitePath )
+
+        } else {
 
             this.filename = this.url
+
         }
         let indexRight  = this.filename.lastIndexOf("?");
+
         if (indexRight > 0) {
+
             this.filename = this.filename.substring(0, indexRight);
+
         }
     }
 
     createHeader(
-                    logoRelativePath = "img/mapalchemy_logo.svg",
+                    logoRelativePath = null,
                     backgroundImage = 'url("img/earth_background.png")',
                     siteName = "Python stuff",
                     logoWidth = -1,
@@ -139,8 +151,9 @@ class SiteGen {
         this.footer.updateSelected(this.currentPageIndex)
 
         Rainbow.color();
-        
+
         if (this.sourceIsFile == false) {
+            console.log( "this.sourceIsFile == false")
             if (window.history.state) {
                 window.history.pushState(
 
@@ -151,9 +164,8 @@ class SiteGen {
             }
         }
         else {
+            console.log( "this.sourceIsFile == true")
             //window.location.href = 'index.html?page=' + this.currentPageIndex;
         }
-
-
     }
 }

@@ -54,9 +54,10 @@ class Header {
 
     loadLogo() {
 
+        if ( this.logoRelativePath == null ) return
         this.logo_img = new Image();
         this.logo_img.src = this.logoRelativePath;
-        //this.logo_img.onload = () => this.onImageLoad();
+        this.logo_img.onload = () => this.onImageLoad();
     }
 
     setPage(pageName) {

@@ -451,10 +451,10 @@ thorens_map.wireframeTiles ( )
        //post.addText(para())
 
 
-        let scale = 0.7
+        let scale = 0.8
         let imgAndTxt = new ImageAndText(
 
-            'img/keyboard_commands.svg',
+            'img/keyboard_commands.png',
             780 * scale,
             400 * scale,
             'left',

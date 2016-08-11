@@ -144,7 +144,7 @@ class Page_5 extends PageContent{
 
         let post = this.page.makePostBase()
         let scale = 1
-        let imgAndTxt = new ImageAndText(   'img/elevation_file.svg',
+        let imgAndTxt = new ImageAndText(   'img/elevation_file.png',
                                             420 * scale,
                                             580 * scale,
                                             'left',

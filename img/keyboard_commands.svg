@@ -16,7 +16,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="keyboard_commands.svg">
+   sodipodi:docname="keyboard_commands.svg"
+   inkscape:export-filename="/Users/user/Desktop/keyboard_commands.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <linearGradient
@@ -137,13 +140,13 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#3a3a3a"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="339.58168"
+     inkscape:cx="177.08168"
      inkscape:cy="246.24109"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -155,10 +158,10 @@
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="false"
      showborder="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="387.89858,402.04072"

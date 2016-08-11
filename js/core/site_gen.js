@@ -137,16 +137,23 @@ class SiteGen {
 
         this.header.updateSelected(this.currentPageIndex)
         this.footer.updateSelected(this.currentPageIndex)
+
+        Rainbow.color();
+        
         if (this.sourceIsFile == false) {
-            window.history.pushState(
-									'index.html',
-									'index.html',
-                                    'index.html?page=' + this.currentPageIndex);
+            if (window.history.state) {
+                window.history.pushState(
+
+					'index.html',
+					'index.html',
+                    'index.html?page=' + this.currentPageIndex
+                )
+            }
         }
         else {
             //window.location.href = 'index.html?page=' + this.currentPageIndex;
         }
 
-        Rainbow.color();
+
     }
 }

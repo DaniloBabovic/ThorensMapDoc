@@ -1,7 +1,8 @@
 Thorens Map Documentation
 =========================
 
-#### Thorens Map screenshot ####
+
+#### Thorens Map, a new MAP experience.
 
 ![alt tag](https://raw.githubusercontent.com/DaniloBabovic/ThorensMapDoc/master/img/screenshot_1.png)
 

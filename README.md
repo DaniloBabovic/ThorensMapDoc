@@ -3,7 +3,7 @@ Thorens Map Documentation
 
 #### Thorens Map screenshot ####
 
-![alt tag](https://raw.githubusercontent.com/DaniloBabovic/ThorensMapDoc/img/screenshot_1.png)
+![alt tag](https://raw.githubusercontent.com/DaniloBabovic/ThorensMapDoc/master/img/screenshot_1.png)
 
 
 #### Continual map ####

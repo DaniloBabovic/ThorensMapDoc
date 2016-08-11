@@ -153,7 +153,7 @@ class SiteGen {
         Rainbow.color();
 
         if (this.sourceIsFile == false) {
-            console.log( "this.sourceIsFile == false")
+
             if (window.history.state) {
                 window.history.pushState(
 

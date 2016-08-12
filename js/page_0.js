@@ -466,7 +466,6 @@ thorens_map.wireframeTiles ( )
             70
         )
 
-
         imgAndTxt.text('<gray>' + para() + '</gray>')
         post.addText('<div style="margin-top: 10px">' + imgAndTxt.getText() + '</div><br>')
 

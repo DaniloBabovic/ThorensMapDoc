@@ -14,7 +14,7 @@ class Page_6 extends PageContent{
         let post = this.page.makePostSimple('Implement Thorens Map into your Web site', 20)
         let {ul, t, l, c, nl, div, para} = new TextBuilder().allMethods()
 
-        t(`Send us a quick info:`); nl ( )
+        t(`Send us quick info:`); nl ( )
 
         ul([
             "Use case and location",

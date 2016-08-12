@@ -6,13 +6,13 @@ Thorens Map Documentation
 
 ![alt tag](https://raw.githubusercontent.com/DaniloBabovic/ThorensMapDoc/master/img/screenshot_1.png)
 
-#### Documentation for map component
+#### Documentation for the map component
 
 ![alt tag](https://raw.githubusercontent.com/DaniloBabovic/ThorensMapDoc/master/img/doc_shot.png)
 
 ### Offline
 
-* You can download documentation zip file, unpack and start index.html
+* You can download the documentation zip file, unpack and start index.html
 
 #### Live ####
 

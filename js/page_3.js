@@ -153,7 +153,7 @@ class Page_3 extends PageContent{
 
          c(`"bg_color": "#444444",
 "bg_opacity": 0.7,`)
-         t(`Plane behind text.`); nl ( ); nl ( )
+         t(`A plane behind text.`); nl ( ); nl ( )
 
          c(`"level_range": [14, 16]`)
          t(`The marker will be displayed only in levels

@@ -19,7 +19,7 @@ class Page_0 extends PageContent{
         this.wireframe ( )
         this.keyboard ( )
 
-        let disqus_identifier = "thorens_doc"
+        let disqus_identifier = "thorens_doc_home"
         let newTitle = "Thorens Documentation"
         this.disqus ( disqus_identifier, newTitle)
     }

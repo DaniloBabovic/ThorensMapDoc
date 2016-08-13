@@ -34,7 +34,7 @@ class DisqusManager {
         const onLoadDSQ = ( ) => {
 
             this.loaded = true
-            reset ( disqus_identifier, newUrl, newTitle )
+            this.reset ( disqus_identifier, newUrl, newTitle )
         }
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {

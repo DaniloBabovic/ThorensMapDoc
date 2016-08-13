@@ -48,7 +48,7 @@ class DisqusManager {
             DISQUS.reset({
                 reload: true,
                 config: function () {
-                    this.page.identifier = disqus_identifier;
+                    this.page.identifier = "";
                     this.page.url = newUrl;
                     //this.page.title = newTitle;
                     this.language = this.lang;

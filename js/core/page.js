@@ -109,6 +109,7 @@ class PageContent {
 
             let disqus_identifier = "ThorensMapDoc" + this.pageName
 
+            
             let newUrl = this.siteGen.siteURL + 'index.html?page=' + this.pageNumber
 
             let newTitle = "Thorens Doc " + this.pageName

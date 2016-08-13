@@ -49,7 +49,12 @@ class DisqusManager {
 
     reset ( disqus_identifier, newUrl, newTitle ) {
 
-        console.log ( "reset", disqus_identifier, newUrl, newTitle )
+        console.log ( "" )
+            console.log ( "reset disqus_identifier =", disqus_identifier)
+            console.log ( "newUrl =", disqus_identifier)
+            console.log ( "newTitle =", newTitle)
+        console.log ( "" )
+        
         DISQUS.reset({
             reload: true,
             config: function () {

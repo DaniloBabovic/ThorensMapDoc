@@ -6,6 +6,7 @@ class Page {
         this.pageName = pageName
         this.posts = []
         this.onInsert = null
+        this.onReadyForInsert = null
     }
 
     loadXMLDoc(filename, onDone)
@@ -86,6 +87,7 @@ class Page {
 
     onPageInsert ( ) {
 
+        if (this.onReadyForInsert != null) this.onReadyForInsert ( )
         if (this.onInsert != null) this.onInsert ( )
     }
 }

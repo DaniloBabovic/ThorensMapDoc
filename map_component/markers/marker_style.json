@@ -1,0 +1,86 @@
+{
+    "place": {
+        "text_color": "#DDDDDD",
+        "stick_color": "#444444",
+        "bg_color": "#222222",
+        "bg_opacity": 0.7,
+        "stickHeight": 80,
+        "level_range": [14, 16],
+        "scale": 0.9,
+        "lightColor": "#FFFFFF",
+        "lightIntensity": 1,
+        "lightDecay": 1.5
+    },
+    "place_small": {
+        "text_color": "#DDDDDD",
+        "stick_color": "#888888",
+        "bg_color": "#444444",
+        "bg_opacity": 0.7,
+        "stickHeight": 70,
+        "level_range": [15, 16],
+        "scale": 0.7,
+        "lightColor": "#FFFFFF",
+        "lightIntensity": 1,
+        "lightDecay": 2
+    },
+    "shelter": {
+        "text_color": "#DDDDDD",
+        "stick_color": "#00AA00",
+        "bg_color": "#004400",
+        "bg_opacity": 0.7,
+        "stickHeight": 70,
+        "level_range": [15, 16],
+        "scale": 0.6,
+        "lightColor": "#FFFFFF",
+        "lightIntensity": 1,
+        "lightDecay": 3
+    },
+    "airport": {
+        "text_color": "#DDDDDD",
+        "stick_color": "#0000AA",
+        "bg_color": "#000044",
+        "bg_opacity": 0.7,
+        "stickHeight": 80,
+        "level_range": [14, 16],
+        "scale": 0.6,
+        "lightColor": "#AAAAFF",
+        "lightIntensity": 1,
+        "lightDecay": 2.5
+    },
+    "mountain_peak": {
+        "text_color": "#EEEEEE",
+        "stick_color": "#FF4400",
+        "bg_color": "#AA2200",
+        "bg_opacity": 0.85,
+        "stickHeight": 50,
+        "level_range": [14, 16],
+        "scale": 0.5,
+        "lightColor": "#FFFFDD",
+        "lightIntensity": 1,
+        "lightDecay": 3
+    },
+    "restaurant": {
+        "text_color": "#DDDDDD",
+        "stick_color": "#00AAAA",
+        "bg_color": "#004444",
+        "bg_opacity": 0.7,
+        "stickHeight": 50,
+        "level_range": [15, 16],
+        "scale": 0.5,
+        "lightColor": "#88CCCC",
+        "lightIntensity": 1,
+        "lightDecay": 3.5
+    },
+    "ski_drive": {
+        "text_color": "#FFFFFF",
+        "stick_color": "#0000AA",
+        "bg_color": "#000044",
+        "bg_opacity": 0.8,
+        "stickHeight": 40,
+        "level_range": [14, 16],
+        "scale": 0.5,
+        "lightColor": "#9999FF",
+        "lightIntensity": 1,
+        "lightDecay": 3
+    }
+}

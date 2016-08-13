@@ -1,0 +1,114 @@
+
+{
+    "name": "Val Thorens",
+
+    "levels" : [ 16, 15, 14 ],
+    "ambientLight" : "#BBBBBB",
+    "haveStats" : true,
+    "font_path" : "map_component/fonts/",
+    "map_path" : "map_component/map_tiles/",
+    "elevation_path" : "map_component/elevation/",
+    "showLocationInfo" : true,
+    "showNavigationButtons" : true,
+    "showSnowAnimation" : false,
+    "showWireframeButton" : true,
+    "showKeyboardOnStart" : true,
+
+    "heightOffset" : -2400,
+    "scale_14" : 0.20,
+    "scale_15" : 0.5,
+    "scale_16" : 0.6,
+
+    "tile_range" : {
+
+        "_14": {
+
+            "fromX":  8488,
+            "toX":    8494,
+
+            "fromY":  5871,
+            "toY":    5877
+
+        },
+
+        "_15": {
+
+            "fromX":  16976,
+            "toX":    16990,
+
+            "fromY":  11742,
+            "toY":    11755
+
+        },
+
+        "_16": {
+
+            "fromX":  33951,
+            "toX":    33981,
+
+            "fromY":  23483,
+            "toY":    23512
+
+        }
+    },
+
+
+    "elevation_files_info" : {
+
+        "top_left": {
+
+            "friendlyName":  "Top-left Val Thorens",
+            "file_name": "top_left_val_thorens.png",
+            "point_1": "45.359689 6.596151",
+            "point_2": "45.287823 6.493874",
+            "url": "http://terrain.party/api/export?name=top_left_val_thorens&box=6.596151,45.359689,6.493874,45.287823",
+            "widthPX":  1081,
+            "heightPX":  1081,
+            "fromMeter": 1449,
+            "toMeter": 2993
+
+        },
+
+        "top_right": {
+
+            "friendlyName":  "Top-right Val Thorens",
+            "file_name" : "top_right_val_thorens.png",
+            "point_1": "45.359930 6.669966",
+            "point_2": "45.288065 6.567689",
+            "url": "http://terrain.party/api/export?name=top_right_val_thorens&box=6.669966,45.359930,6.567689,45.288065",
+            "widthPX":  1081,
+            "heightPX":  1081,
+            "fromMeter": 1698,
+            "toMeter": 3346
+
+        },
+
+        "bottom_left Val Thorens": {
+
+            "friendlyName":  "Bottom-left Val Thorens",
+            "file_name" : "bottom_left_val_thorens.png",
+            "point_1": "45.309216 6.598166",
+            "point_2": "45.237350 6.495980",
+            "url": "http://terrain.party/api/export?name=bottom_left_val_thorens&box=6.598166,45.309216,6.495980,45.237350",
+            "widthPX":  1081,
+            "heightPX":  1081,
+            "fromMeter": 1735,
+            "toMeter": 3225
+
+        },
+
+        "bottom_right Val Thorens": {
+
+            "friendlyName":  "Bottom-right Val Thorens",
+            "file_name" : "bottom_right_val_thorens.png",
+            "point_1": "45.310665 6.669235",
+            "point_2": "45.238800 6.567046",
+            "url": "http://terrain.party/api/export?name=bottom_right_val_thorens&box=6.669235,45.310665,6.567046,45.238800",
+            "widthPX":  1081,
+            "heightPX":  1081,
+            "fromMeter": 1968,
+            "toMeter": 3534
+
+        }
+    }
+}

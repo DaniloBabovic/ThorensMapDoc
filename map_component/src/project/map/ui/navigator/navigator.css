@@ -1,0 +1,109 @@
+.navigator_tr {
+
+    padding: 0px;
+}
+
+.navigator_td {
+
+    padding: 0px;
+}
+
+.navigator_div {
+
+	width: 22px;
+	height: : 15px;
+	overflow: hidden;
+	font-size: 20px;
+	margin: 2px;
+	padding: 2px;
+	color: #00DDDD;
+    text-align: center;
+	-webkit-touch-callout: none; /* iOS Safari */
+  	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+  	-khtml-user-select: none;    /* Konqueror */
+  	-moz-user-select: none;      /* Firefox */
+  	-ms-user-select: none;       /* Internet Explorer/Edge */
+  	user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+	/*background-color: rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);*/
+}
+
+.navigator_div:hover {
+
+	cursor: pointer;
+	color: #EEEEEE;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+}
+
+.navigator_div:active {
+
+    color: #FFFFFF;
+    background-color: rgba(0, 255, 255, 0.8);
+
+}
+
+.whiteColor {
+
+    color: #FFFFFF;
+}
+
+
+.defaulttable {
+  display: table;
+}
+.defaulttable thead {
+  display: table-header-group;
+}
+.defaulttable tbody {
+  display: table-row-group;
+}
+.defaulttable tfoot {
+  display: table-footer-group;
+}
+.defaulttable tbody>tr:hover,
+.defaulttable tbody>tr {
+  display: table-row;
+}
+.defaulttable tbody>tr:hover>td,
+.defaulttable tbody>tr>td {
+  display: table-cell;
+}
+.defaulttable,
+.defaulttable tbody,
+.defaulttable tbody>tr:hover,
+.defaulttable tbody>tr,
+.defaulttable tbody>tr:hover>td,
+.defaulttable tbody>tr>td,
+.defaulttable tbody>tr:hover>th,
+.defaulttable tbody>tr>th,
+.defaulttable thead>tr:hover>td,
+.defaulttable thead>tr>td,
+.defaulttable thead>tr:hover>th,
+.defaulttable thead>tr>th,
+.defaulttable tfoot>tr:hover>td,
+.defaulttable tfoot>tr>td,
+.defaulttable tfoot>tr:hover>th,
+.defaulttable tfoot>tr>th {
+  background: transparent;
+  border: 0px solid #000;
+  border-spacing: 0px;
+  border-collapse: separate;
+  empty-cells: show;
+  padding: 0px;
+  margin: 0px;
+  outline: 0px;
+  font-size: 100%;
+  color: #000;
+  vertical-align: top;
+  text-align: left;
+  font-family: sans-serif;
+  table-layout: auto;
+  caption-side: top;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}

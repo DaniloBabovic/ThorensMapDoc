@@ -1,0 +1,382 @@
+{
+    "_1": {
+        "text": "Val Thorens",
+        "lat": "45.2978426",
+        "long": "6.5826052",
+        "type": "place",
+        "haveLight": true
+    },
+
+    "_2": {
+        "text": "Les Menuires",
+        "lat": "45.3240723",
+        "long": "6.5382696",
+        "type": "place",
+        "haveLight": true
+    },
+
+    "_4": {
+        "text": "Altiport de Val Thorens",
+        "lat": "45.2816025",
+        "long": "6.5736936",
+        "type": "airport",
+        "haveLight": true
+    },
+
+
+
+
+
+
+
+    "_5": {
+        "text": "Reberty Village",
+        "lat": "45.3173059",
+        "long": "6.5463",
+        "type": "place_small"
+    },
+
+    "_6": {
+        "text": "Le Hameau des Chalets",
+        "lat": "45.3186975",
+        "long": "6.5473868",
+        "type": "place_small"
+    },
+
+    "_7": {
+        "text": "Brelin",
+        "lat": "45.3265877",
+        "long": "6.5407176",
+        "type": "place_small"
+    },
+
+    "_8": {
+        "text": "Preyerand",
+        "lat": "45.3278179",
+        "long": "6.5353355",
+        "type": "place_small"
+    },
+
+    "_9": {
+        "text": "Hameau des Marmottes",
+        "lat": "45.3309962",
+        "long": "6.5335128",
+        "type": "place_small"
+    },
+
+    "_10": {
+        "text": "Le Levassaix",
+        "lat": "45.3370431",
+        "long": "6.5329959",
+        "type": "place_small"
+    },
+
+    "_11": {
+        "text": "Le Bettex",
+        "lat": "45.3409786",
+        "long": "6.5261719",
+        "type": "place_small"
+    },
+
+    "_12": {
+        "text": "Praranger",
+        "lat": "45.3512596",
+        "long": "6.52345",
+        "type": "place_small"
+    },
+
+
+
+
+
+
+    "_13": {
+        "text": "John's Carrefour",
+        "lat": "45.2966032",
+        "long": "6.5839062",
+        "type": "restaurant"
+    },
+    "_14": {
+        "text": "Le Karmin",
+        "lat": "45.2986524",
+        "long": "6.5757628",
+        "type": "restaurant"
+    },
+    "_15": {
+        "text": "La Folie Douce",
+        "lat": "45.3047223",
+        "long": "6.5879444",
+        "type": "restaurant",
+        "haveLight": true
+    },
+    "_16": {
+        "text": "Chalet de la Marine",
+        "lat": "45.2891225",
+        "long": "6.5894344",
+        "type": "restaurant"
+    },
+    "_17": {
+        "text": "Chalet du Thorens",
+        "lat": "45.285525",
+        "long": "6.58402",
+        "type": "restaurant",
+        "haveLight": true
+    },
+    "_18": {
+        "text": "Chalet du Lac",
+        "lat": "45.2869857",
+        "long": "6.5749103",
+        "type": "restaurant"
+    },
+    "_19": {
+        "text": "Chalet de Caron",
+        "lat": "45.2953058",
+        "long": "6.5647063",
+        "type": "restaurant"
+    },
+    "_20": {
+        "text": "Chalet des 2 Ours",
+        "lat": "45.2942625",
+        "long": "6.5522418",
+        "type": "restaurant",
+        "haveLight": true
+    },
+    "_21": {
+        "text": "Le Panoramic",
+        "lat": "45.2974081",
+        "long": "6.5091893",
+        "type": "restaurant"
+    },
+    "_22": {
+        "text": "Le 7eme Ciel",
+        "lat": "45.3105378",
+        "long": "6.5192541",
+        "type": "restaurant"
+    },
+    "_23": {
+        "text": "Les 4 Vents",
+        "lat": "45.3132208",
+        "long": "6.5576475",
+        "type": "restaurant"
+    },
+    "_24": {
+        "text": "L’Alpage",
+        "lat": "45.3100315",
+        "long": "6.5686666",
+        "type": "restaurant",
+        "haveLight": true
+    },
+    "_25": {
+        "text": "Le France",
+        "lat": "45.3149371",
+        "long": "6.5502814",
+        "type": "restaurant",
+        "haveLight": true
+    },
+    "_26": {
+        "text": "Chalet du Sunny",
+        "lat": "45.3219385",
+        "long": "6.5614778",
+        "type": "restaurant",
+        "haveLight": true
+    },
+    "_27": {
+        "text": "Chalet des Neiges",
+        "lat": "45.3298703",
+        "long": "6.554758",
+        "type": "restaurant"
+    },
+    "_28": {
+        "text": "Les 3v",
+        "lat": "45.320356",
+        "long": "6.5307502",
+        "type": "restaurant"
+    },
+    "_29": {
+        "text": "Chez Duch",
+        "lat": "45.2637135",
+        "long": "6.5599662",
+        "type": "restaurant"
+    },
+    "_30": {
+        "text": "Le Grand Lac",
+        "lat": "45.3538101",
+        "long": "6.553348",
+        "type": "restaurant"
+    },
+    "_31": {
+        "text": "Plan des Mains",
+        "lat": "45.3425792",
+        "long": "6.5899721",
+        "type": "restaurant",
+        "haveLight": true
+    },
+    "_32": {
+        "text": "Le Frison",
+        "lat": "45.3417357",
+        "long": "6.5255288",
+        "type": "restaurant",
+        "haveLight": true
+    },
+
+
+
+
+
+    "_40": {
+        "text": "Mont du Chat",
+        "lat": "45.2634166",
+        "long": "6.5190542",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+    "_41": {
+        "text": "Mont Brequin",
+        "lat": "45.2519742",
+        "long": "6.5335408",
+        "type": "mountain_peak"
+    },
+
+    "_42": {
+        "text": "Roche Jaille",
+        "lat": "45.2709345",
+        "long": "6.5083793",
+        "type": "mountain_peak"
+    },
+
+    "_43": {
+        "text": "Cime de Caron",
+        "lat": "45.2630369",
+        "long": "6.5608034",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+    "_44": {
+        "text": "Pointe du Bouchet",
+        "lat": "45.2538559",
+        "long": "6.6042811",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+    "_45": {
+        "text": "Aiguille du Bouchet",
+        "lat": "45.2585406",
+        "long": "6.6101215",
+        "type": "mountain_peak"
+    },
+
+    "_46": {
+        "text": "Pointe de Thorens",
+        "lat": "45.2649327",
+        "long": "6.609541",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+    "_47": {
+        "text": "Aiguille de Polset",
+        "lat": "45.2760193",
+        "long": "6.6341793",
+        "type": "mountain_peak"
+    },
+
+    "_48": {
+        "text": "Dome de Polset",
+        "lat": "45.2762863",
+        "long": "6.6392948",
+        "type": "mountain_peak"
+    },
+
+    "_49": {
+        "text": "Aiguille de Peclet",
+        "lat": "45.2812898",
+        "long": "6.6240507",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+    "_50": {
+        "text": "Mont du Vallon",
+        "lat": "45.3285173",
+        "long": "6.6089459",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+    "_51": {
+        "text": "Pointe Renod",
+        "lat": "45.246243",
+        "long": "6.6055822",
+        "type": "mountain_peak"
+    },
+
+    "_52": {
+        "text": "Le Teurre",
+        "lat": "45.3271346",
+        "long": "6.5126424",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+    "_53": {
+        "text": "Pointe de la Masse",
+        "lat": "45.2971689",
+        "long": "6.5086749",
+        "type": "mountain_peak",
+        "haveLight": true
+    },
+
+
+
+
+
+    "_500": {
+        "text": "Le Ski Drive",
+        "lat": "45.3380918",
+        "long": "6.5723358",
+        "type": "ski_drive",
+        "haveLight": true
+    },
+
+
+
+
+
+
+
+
+
+    "_1000": {
+        "text": "Refuge du Lac du Lou",
+        "lat": "45.2934289",
+        "long": "6.5306208",
+        "type": "shelter",
+        "haveLight": true
+    },
+    "_1001": {
+        "text": "Refuge de Peclet Polset",
+        "lat": "45.2893683",
+        "long": "6.6593644",
+        "type": "shelter",
+        "haveLight": true
+    },
+    "_1002": {
+        "text": "Refuge du Plan Bouchet",
+        "lat": "45.2469834",
+        "long": "6.5698481",
+        "type": "shelter",
+        "haveLight": true
+    },
+    "_1003": {
+        "text": "Refuge du Saut",
+        "lat": "45.3375292",
+        "long": "6.6324579",
+        "type": "shelter",
+        "haveLight": true
+    }
+
+
+}

@@ -1,0 +1,161 @@
+.button_keyboard {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.button_keyboard:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.75);
+}
+
+.button_keyboard:active {
+
+    box-shadow: 0px 0px 12px rgba( 0, 255, 255, 1);
+    background-color: rgba(0, 255, 255, 1);
+}
+
+.dialog_root
+{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+}
+
+.dialog_header
+{
+	display: flex;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+}
+
+.dialog_title
+{
+	float: left;
+	color: #FFFFFF;
+	padding: 10px;
+}
+
+.dialog_close
+{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	padding: 5px;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog_close:hover
+{
+	color: #99FF00;
+	background-color: rgba(0, 0, 0, 1);
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+}
+
+.dialog_close:active
+{
+	color: rgba(255, 255, 0, 1);
+}
+
+.dialog_body
+{
+	margin-top: 10px;
+	display: flex;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #AAAAAA;
+	box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
+}
+
+.dialog_buttons
+{
+	margin-top: 10px;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #AAAAAA;
+	box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
+}
+
+.dialog_ok
+{
+	padding: 5px;
+	width: 100%;
+	color: #FFFFFF;
+	text-align: center;
+	display: none;
+}
+
+.dialog_ok:hover
+{
+	color: #99FF00;
+	background-color: rgba(0, 0, 0, 1);
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+}
+
+.dialog_ok:active
+{
+	color: rgba(255, 255, 0, 1);
+}
+
+.dialog_ok_cancel
+{
+	display: none;
+}
+
+.button_no
+{
+	margin-left: 0px;
+	float: left;
+	padding: 5px;
+	width: 165px;
+	color: #FFFFFF;
+	text-align: center;
+	box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.button_no:hover
+{
+	color: #99FF00;
+	background-color: rgba(0, 0, 0, 1);
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+}
+
+.button_no:active
+{
+	color: rgba(255, 255, 0, 1);
+}
+
+.button_yes
+{
+	margin-left: 10px;
+	float: left;
+	padding: 5px;
+	width: 165px;
+	color: #FFFFFF;
+	text-align: center;
+	box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.button_yes:hover
+{
+	color: #99FF00;
+	background-color: rgba(0, 0, 0, 1);
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+}
+
+.button_yes:active
+{
+	color: rgba(255, 255, 0, 1);
+}

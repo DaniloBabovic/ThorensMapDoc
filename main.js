@@ -21,10 +21,9 @@ if ( siteGen.sourceIsFile == true ) {
     siteGen.disqus.enabled = false
 }
 
-function setGlobalSitePath ( _sitePath) {
-
-    sitePath = _sitePath
-}
+function setGlobalSitePath ( _sitePath) { sitePath = _sitePath }
+const setZipCallBack = ( _callBack ) => { zipCallBack = _callBack }
+const onZipCallBack = (  ) => { zipCallBack () }
 
 siteGen.createHeader(   logoPath,
                         'url("img/earth_background.png")',

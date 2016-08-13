@@ -103,14 +103,18 @@ class PageContent {
 
     disqus ( disqus_identifier, newTitle ) {
 
+
         if ( this.siteGen.disqus.enabled == false )  return
 
-        const onDivInserted = ( disqus_identifier, newTitle ) => {
+        this.disqus_identifier = disqus_identifier
+        this.newTitle = newTitle
+
+        const onDivInserted = ( ) => {
 
             let newUrl = this.siteGen.siteURL + 'index.html?page=' + this.pageNumber
 
-            this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
+            this.siteGen.disqus.insert ( this.disqus_identifier, newUrl, this.newTitle  )
         }
-        this.page.onInsert = ( disqus_identifier, newTitle ) => onDivInserted ( disqus_identifier, newTitle )
+        this.page.onInsert = ( ) => onDivInserted ( )
     }
 }

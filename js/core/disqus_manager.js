@@ -15,7 +15,7 @@ class DisqusManager {
         var disqus_identifier = _disqus_identifier
 
         var disqus_url = newUrl
-        
+
         var disqus_config = function () {
     	  this.language = "en";
     	};
@@ -55,10 +55,9 @@ class DisqusManager {
         });
     }
 
-    insert ( disqus_identifier, newUrl, newTitle ) {
+    insert ( disqus_identifier, newUrl, newTitle, hide ) {
 
         if (this.enabled == false) return
-
         if ( this.loaded == false ) {
 
             this.loadDisqusScrpt ( disqus_identifier, newUrl, newTitle )

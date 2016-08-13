@@ -10,7 +10,11 @@ class Page_2 extends PageContent{
         this.paths ( )
         this.tile_range ( )
         this.elevations ( )
-        this.disqus ( )
+
+        let disqus_identifier = "thorens_map_doc_config"
+        let newTitle = "Thorens Config Page"
+
+        this.disqus ( disqus_identifier, newTitle )
     }
 
     intro ( ) {

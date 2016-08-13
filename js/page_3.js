@@ -6,7 +6,11 @@ class Page_3 extends PageContent{
         this.page.makeTitle(`<p class="place_title">Markers</p>`, 'rgba(140, 140, 140, 0.4)')
         this.marker ( )
         this.markerStyle ( )
-        this.disqus ( )
+
+        let disqus_identifier = "thorens_map_doc_markers"
+        let newTitle = "Thorens Markers Page"
+
+        this.disqus ( disqus_identifier, newTitle )
     }
 
     marker ( ) {

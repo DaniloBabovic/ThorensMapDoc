@@ -6,7 +6,11 @@ class Page_6 extends PageContent{
         this.page.makeTitle("Support", 'rgba(0, 80, 80, 1)')
 
         this.support ( )
-        this.disqus ( )
+
+        let disqus_identifier = "thorens_map_doc_support"
+        let newTitle = "Thorens Support Page"
+
+        this.disqus ( disqus_identifier, newTitle )
     }
 
     support ( ) {

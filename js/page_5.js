@@ -9,7 +9,11 @@ class Page_5 extends PageContent{
         this.imageData()
         this.elevationForTile()
 
-        this.disqus ( "Elevation", 5)
+        let disqus_identifier = "thorens_map_doc_tile_elevation"
+        let newTitle = "Thorens Elevation Page"
+
+        this.disqus ( disqus_identifier, newTitle )
+
     }
 
     terrainParty() {

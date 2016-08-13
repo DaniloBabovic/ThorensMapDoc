@@ -15,18 +15,7 @@ class DisqusManager {
         var disqus_identifier = _disqus_identifier
 
         var disqus_url = newUrl
-
-        console.log (
-
-            "loadDisqusScrpt",
-            "idisqus_identifier=",
-            "disqus_identifier=",
-            disqus_identifier,
-            "newUrl=",
-            newUrl,
-            newTitle
-        )
-
+        
         var disqus_config = function () {
     	  this.language = "en";
     	};
@@ -54,7 +43,7 @@ class DisqusManager {
             console.log ( "newUrl =", disqus_identifier)
             console.log ( "newTitle =", newTitle)
         console.log ( "" )
-        
+
         DISQUS.reset({
             reload: true,
             config: function () {

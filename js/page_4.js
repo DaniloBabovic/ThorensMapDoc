@@ -6,7 +6,11 @@ class Page_4 extends PageContent{
         this.page.makeTitle(`<p class="place_title">Tile tools</p>`, 'rgba(140, 140, 140, 0.4)')
         this.tileImage()
         this.tile()
-        this.disqus ( )
+
+        let disqus_identifier = "thorens_map_doc_tile_tools"
+        let newTitle = "Thorens Tile Tools Page"
+
+        this.disqus ( disqus_identifier, newTitle )
     }
 
     tileImage() {

@@ -101,18 +101,15 @@ class PageContent {
         this.page.pageNumber = this.pageNumber
     }
 
-    disqus ( ) {
+    disqus ( disqus_identifier, newTitle ) {
 
         if ( this.siteGen.disqus.enabled == false )  return
 
         const onDivInserted = ( ) => {
 
-            let disqus_identifier = "ThorensMapDoc" + this.pageName
-
-            
             let newUrl = this.siteGen.siteURL + 'index.html?page=' + this.pageNumber
 
-            let newTitle = "Thorens Doc " + this.pageName
+            let newTitle = newTitle
 
             this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
         }

@@ -15,7 +15,18 @@ class DisqusManager {
         var disqus_identifier = _disqus_identifier
 
         var disqus_url = newUrl
-        console.log ( "loadDisqusScrpt", disqus_identifier, newUrl, newTitle )
+
+        console.log (
+
+            "loadDisqusScrpt",
+            "idisqus_identifier=",
+            "disqus_identifier=",
+            disqus_identifier,
+            "newUrl=",
+            newUrl,
+            newTitle
+        )
+
         var disqus_config = function () {
     	  this.language = "en";
     	};
@@ -29,8 +40,6 @@ class DisqusManager {
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             console.log("init",dsq.page);
         })();
-
-        this.reset( )
         console.log ('loadDisqusScrpt:disqus_config:' + disqus_config)
         this.loaded = true
     }
@@ -57,9 +66,7 @@ class DisqusManager {
 
             this.loadDisqusScrpt ( disqus_identifier, newUrl, newTitle )
 
-        } else {
-
-            this.reset ( disqus_identifier, newUrl, newTitle )
         }
+        this.reset ( disqus_identifier, newUrl, newTitle )
     }
 }

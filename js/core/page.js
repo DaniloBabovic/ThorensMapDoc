@@ -109,9 +109,9 @@ class PageContent {
 
             let disqus_identifier = "ThorensMapDoc" + this.pageName
 
-            let newUrl = this.siteGen.siteURL + "index.html?page=" + this.pageNumber
+            let newUrl = this.siteGen.siteURL
 
-            let newTitle = "Thorens Doc " + this.pageName
+            let newTitle = "Thorens Doc"
 
             this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
         }

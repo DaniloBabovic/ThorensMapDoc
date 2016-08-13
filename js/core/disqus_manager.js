@@ -29,6 +29,7 @@ class DisqusManager {
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
 
+        console.log ('loadDisqusScrpt:disqus_config:' + disqus_config)
         this.loaded = true
     }
 

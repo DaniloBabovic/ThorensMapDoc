@@ -108,7 +108,7 @@ class PageContent {
         const onDivInserted = ( ) => {
 
             let disqus_identifier = "ThorensMapDoc" + this.pageName
-
+            
             let newUrl = this.siteGen.siteURL
 
             let newTitle = "Thorens Doc"

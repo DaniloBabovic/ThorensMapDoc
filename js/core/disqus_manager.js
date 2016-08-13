@@ -30,8 +30,23 @@ class DisqusManager {
             console.log("init",dsq.page);
         })();
 
+        this.reset( )
         console.log ('loadDisqusScrpt:disqus_config:' + disqus_config)
         this.loaded = true
+    }
+
+    reset ( disqus_identifier, newUrl, newTitle ) {
+
+        console.log ( "reset", disqus_identifier, newUrl, newTitle )
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                this.page.identifier = disqus_identifier;
+                this.page.url = newUrl;
+                this.page.title = newTitle;
+                this.language = this.lang;
+            }
+        });
     }
 
     insert ( disqus_identifier, newUrl, newTitle ) {
@@ -44,16 +59,7 @@ class DisqusManager {
 
         } else {
 
-            console.log ( "reset", disqus_identifier, newUrl, newTitle )
-            DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = "";
-                    this.page.url = newUrl;
-                    //this.page.title = newTitle;
-                    this.language = this.lang;
-                }
-            });
+            this.reset ( disqus_identifier, newUrl, newTitle )
         }
     }
 }

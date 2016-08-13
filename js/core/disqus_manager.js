@@ -67,6 +67,10 @@ class DisqusManager {
             this.loadDisqusScrpt ( disqus_identifier, newUrl, newTitle )
 
         }
-        this.reset ( disqus_identifier, newUrl, newTitle )
+        setTimeout(
+
+            ()=> { this.reset ( disqus_identifier, newUrl, newTitle ) },
+            100
+        )
     }
 }

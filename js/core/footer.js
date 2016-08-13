@@ -5,7 +5,7 @@ class Footer {
         this.pages = siteGen.pageNames
         this.siteGen = siteGen
         this.bottomDiv = siteGen.bottomDiv
-        this.backgroundColor = '#222222'
+        this.backgroundColor = "rgba(0, 0, 0, 0)"
 
         this.siteName = siteGen.header.siteName
 
@@ -16,12 +16,32 @@ class Footer {
         this.links = ''
     }
 
+    getDiscusHTML ( )  {
+
+        let post = new PostSimple(null, "", 0)
+
+        let {t, l, c, nl, div, para} = new TextBuilder().allMethods()
+        t('<div id="disqus_thread"></div>'); nl()
+        let html = para()
+
+        post.addText(para())
+        post.createPostBody ()
+
+        return post.html
+    }
+
     makefooterBody()
     {
 
+        this.html = ``
+        if ( this.siteGen.disqus.enabled ) {
+
+            let disqusHTML = this.getDiscusHTML ( )
+            this.html += disqusHTML
+        }
         //style="max-width: 90%"
-        this.html = `
-            <div class="grid" style="max-width: 100%">
+        this.html += `
+            <div class="grid" style="max-width: 100%; background-color: #222222">
 
                 <nav class="main-nav unit half hide-on-mobiles" style="width:100%; text-align: center;"">
                     <ul id="footer_ul">
@@ -30,12 +50,10 @@ class Footer {
                 </nav>
 
             </div>
-            <div style="width: 100%; text-align: center; padding-bottom: 30px; padding-top: 30px">
+            <div style="width: 100%; text-align: center; padding-bottom: 30px; ; background-color: #222222; padding-top: 30px">
                 © 2016 MapAlchemy
             </div>
             `
-
-
     }
 
     onImageLoad()
@@ -98,6 +116,7 @@ class Footer {
         this.footer  = document.createElement("footer");
         this.footer.setAttribute("role", "banner");
         this.footer.style["width"] = '100%'
+        this.footer.style["padding-bottom"] = '0px'
 
         this.footer.style["background-color"] = this.backgroundColor
 

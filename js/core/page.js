@@ -87,6 +87,7 @@ class Page {
     onPageInsert ( ) {
 
         if (this.onInsert != null) this.onInsert ( )
+        console.log ( "Page.onPageInsert", this.pageName, this.pageNumber )
     }
 }
 
@@ -95,7 +96,28 @@ class PageContent {
     constructor(siteGen) {
 
         this.siteGen = siteGen
-        this.pageName = siteGen.pageNames[0]
+        this.pageNumber = siteGen.pages.length
+        this.pageName = siteGen.pageNames[siteGen.pages.length]
         this.page = siteGen.makePage(this.pageName)
+        this.page.pageNumber = this.pageNumber
+    }
+
+    disqus ( ) {
+
+        if ( this.siteGen.disqus.enabled == false )  return
+
+        const onDivInserted = ( ) => {
+
+            console.log ( "onDivInserted" )
+
+            let disqus_identifier = "ThorensMapDoc" + this.pageName
+
+            let newUrl = this.siteGen.siteURL + "index.html?page=" + this.pageNumber
+
+            let newTitle = "Thorens Doc " + this.pageName
+
+            this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
+        }
+        this.page.onInsert = () => onDivInserted ( )
     }
 }

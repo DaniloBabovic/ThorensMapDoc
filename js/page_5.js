@@ -178,24 +178,4 @@ class Page_5 extends PageContent{
                             `</div><br><br>
         `)
     }
-
-    disqus ( name, pageNumber) {
-
-        if ( this.siteGen.disqus.enabled == false )  return
-        const onDivInserted = ( ) => {
-
-            let disqus_identifier = "ThorensMapDoc" + name
-
-            let newUrl = this.siteGen.siteURL + "index.html?page=" + pageNumber
-
-            let newTitle = "Thorens Doc " + name
-
-            this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
-        }
-        let post = this.page.makePostSimple('', 40)
-        let {t, l, c, nl, div, para} = new TextBuilder().allMethods()
-        t('<div id="disqus_thread"></div>'); nl()
-        post.addText(para())
-        this.page.onInsert = () => onDivInserted ( )
-    }
 }

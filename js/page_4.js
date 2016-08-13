@@ -6,7 +6,7 @@ class Page_4 extends PageContent{
         this.page.makeTitle(`<p class="place_title">Tile tools</p>`, 'rgba(140, 140, 140, 0.4)')
         this.tileImage()
         this.tile()
-        this.disqus ( "Tile_tools", 4)
+        this.disqus ( )
     }
 
     tileImage() {
@@ -89,25 +89,5 @@ let download = new Download ( map_path, report.missingTiles )
         t(`You need to repeat this procedure for every level you want to download to your server.`)
         post.addText(para())
         tb.clear()
-    }
-
-    disqus ( name, pageNumber) {
-
-        if ( this.siteGen.disqus.enabled == false )  return
-        const onDivInserted = ( ) => {
-
-            let disqus_identifier = "ThorensMapDoc" + name
-
-            let newUrl = this.siteGen.siteURL + "index.html?page=" + pageNumber
-
-            let newTitle = "Thorens Doc " + name
-
-            this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
-        }
-        let post = this.page.makePostSimple('', 40)
-        let {t, l, c, nl, div, para} = new TextBuilder().allMethods()
-        t('<div id="disqus_thread"></div>'); nl()
-        post.addText(para())
-        this.page.onInsert = () => onDivInserted ( )
     }
 }

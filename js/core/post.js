@@ -108,16 +108,18 @@ class Post extends PostBase {
 
 class PostSimple {
 
-    constructor(page, titleText = 'Title', marginTop = 20) {
+    constructor(page = null, titleText = 'Title', marginTop = 20) {
 
         this.titleText = titleText
         this.marginTop = marginTop
-        this.page = page
-        this.siteGen = page.siteGen
-        this.pageDiv = this.siteGen.pageDiv
+        if ( page != null ) {
+
+            this.page = page
+            this.siteGen = page.siteGen
+            this.pageDiv = this.siteGen.pageDiv
+        }
         this.texts = []
     }
-
 
     createPostBody() {
 

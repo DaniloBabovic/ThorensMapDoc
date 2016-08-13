@@ -19,7 +19,6 @@ siteGen.disqus.enabled = true
 if ( siteGen.sourceIsFile == true ) {
 
     siteGen.disqus.enabled = false
-
 }
 
 function setGlobalSitePath ( _sitePath) {

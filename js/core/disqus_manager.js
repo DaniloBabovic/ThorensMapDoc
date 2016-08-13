@@ -9,15 +9,16 @@ class DisqusManager {
         this.enabled = true
     }
 
-    loadDisqusScrpt ( ) {
+    loadDisqusScrpt ( _disqus_identifier, newUrl, newTitle ) {
 
         var disqus_shortname = this.disqus_shortname
-        var disqus_identifier = this.disqus_identifier
+        var disqus_identifier = _disqus_identifier
 
-        var disqus_url = this.disqus_url
-    	var disqus_config = function () {
+        var disqus_url = newUrl
+        var disqus_config = function () {
     	  this.language = "en";
     	};
+
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
             var dsq = document.createElement('script');
@@ -33,26 +34,22 @@ class DisqusManager {
     insert ( disqus_identifier, newUrl, newTitle ) {
 
         if (this.enabled == false) return
-        
-        this.disqus_identifier = disqus_identifier
-        this.disqus_url = newUrl
-        this.newTitle = newTitle
 
-        if ( this.loaded ) {
+        if ( this.loaded == false ) {
+
+            this.loadDisqusScrpt ( disqus_identifier, newUrl, newTitle )
+
+        } else {
 
             DISQUS.reset({
                 reload: true,
                 config: function () {
-                    this.page.identifier = newIdentifier;
+                    this.page.identifier = disqus_identifier;
                     this.page.url = newUrl;
                     this.page.title = newTitle;
-                    this.language = newLanguage;
+                    this.language = this.lang;
                 }
             });
-
-        } else {
-
-            this.loadDisqusScrpt ( )
         }
     }
 }

@@ -87,7 +87,6 @@ class Page {
     onPageInsert ( ) {
 
         if (this.onInsert != null) this.onInsert ( )
-        console.log ( "Page.onPageInsert", this.pageName, this.pageNumber )
     }
 }
 
@@ -107,8 +106,6 @@ class PageContent {
         if ( this.siteGen.disqus.enabled == false )  return
 
         const onDivInserted = ( ) => {
-
-            console.log ( "onDivInserted" )
 
             let disqus_identifier = "ThorensMapDoc" + this.pageName
 

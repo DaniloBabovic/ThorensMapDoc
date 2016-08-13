@@ -15,6 +15,7 @@ class DisqusManager {
         var disqus_identifier = _disqus_identifier
 
         var disqus_url = newUrl
+        console.log ( "loadDisqusScrpt", disqus_identifier, newUrl, newTitle )
         var disqus_config = function () {
     	  this.language = "en";
     	};
@@ -41,6 +42,7 @@ class DisqusManager {
 
         } else {
 
+            console.log ( "reset", disqus_identifier, newUrl, newTitle )
             DISQUS.reset({
                 reload: true,
                 config: function () {

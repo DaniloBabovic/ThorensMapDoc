@@ -31,6 +31,11 @@ class DisqusManager {
     	  this.language = "en";
     	};
 
+        const onLoadDSQ = ( ) => {
+
+            this.loaded = true
+            reset ( disqus_identifier, newUrl, newTitle )
+        }
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
             var dsq = document.createElement('script');
@@ -38,10 +43,8 @@ class DisqusManager {
             dsq.async = true;
             dsq.src = disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            console.log("init",dsq.page);
+            script.onload = onLoadDSQ
         })();
-        console.log ('loadDisqusScrpt:disqus_config:' + disqus_config)
-        this.loaded = true
     }
 
     reset ( disqus_identifier, newUrl, newTitle ) {
@@ -66,11 +69,10 @@ class DisqusManager {
 
             this.loadDisqusScrpt ( disqus_identifier, newUrl, newTitle )
 
-        }
-        setTimeout(
+        } else {
 
-            ()=> { this.reset ( disqus_identifier, newUrl, newTitle ) },
-            100
-        )
+            this.reset ( disqus_identifier, newUrl, newTitle )
+
+        }
     }
 }

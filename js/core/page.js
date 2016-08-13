@@ -109,8 +109,6 @@ class PageContent {
 
             let newUrl = this.siteGen.siteURL + 'index.html?page=' + this.pageNumber
 
-            let newTitle = newTitle
-
             this.siteGen.disqus.insert ( disqus_identifier, newUrl, newTitle  )
         }
         this.page.onInsert = ( disqus_identifier, newTitle ) => onDivInserted ( disqus_identifier, newTitle )

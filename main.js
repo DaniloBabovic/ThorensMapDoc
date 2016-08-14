@@ -11,12 +11,11 @@ logoPath = null // TODO make logo
 let siteURL = "http://htmlpreview.github.io/?"
 siteURL +=  "https://raw.githubusercontent.com/DaniloBabovic/"
 siteURL +=  "ThorensMapDoc/master/"
+
 siteGen.siteURL = siteURL
 
-
-
 siteGen.disqus = new DisqusManager ( )
-siteGen.disqus.enabled = true
+siteGen.disqus.enabled = false
 
 if ( siteGen.sourceIsFile == true ) {
 
@@ -24,8 +23,16 @@ if ( siteGen.sourceIsFile == true ) {
 }
 
 function setGlobalSitePath ( _sitePath) { sitePath = _sitePath }
+function onThorensLoaded ( _map, _ThorensAppClass ) {
+
+    thorens_map = _map
+    ThorensAppClass = _ThorensAppClass
+}
+
 const setZipCallBack = ( callBack ) => { _zipCallBack = callBack }
 const onZipCallBack = (  ) => { _zipCallBack () }
+
+thorens_map = null
 
 siteGen.createHeader(   logoPath,
                         'url("img/earth_background.png")',

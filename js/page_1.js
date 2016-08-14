@@ -71,32 +71,38 @@ class Page_1 extends PageContent{
                 <div id="div_buttons_desc" style="text-align: left; margin: 10px">
 
                     <br>
-                    <strong>1. INSERT THORENS MAP HERE</strong><br>
+                    <div class="button_title">
+                        <strong>1. INSERT THORENS MAP HERE</strong><br>
+                    </div>
                     <p style="padding-left: 20px">
-                        This button will insert map component into this view.
+                        This button  inserts the map component into this view.
                         All map Javascript files are packed into one .zip file.
-                        That file will be automaticaly downloaded, unpacked,
-                        added as scrit into document and insert map component into
-                        div with id "map_id".
                         <br>
+                        That file will be automatically downloaded, unpacked,
+                        added as script into the document and it will insert
+                        the map component into div with id "map_id".
 
-                        This is recomended way to use Thorens map component.
+                        <br><br>
 
-
+                        This is a recommended way to use Thorens map component.
                     </p>
 
                     <br>
-                    <strong>2. THORENS-REACT LIVE MAP</strong><br>
+                    <div class="button_title">
+                        <strong>2. THORENS-REACT LIVE MAP</strong><br>
+                    </div>
                     <p style="padding-left: 20px">
-                        WebGL (three.js) and React are the fastest Web renderers.<br>
+                        WebGL (three.js) and React are the fastest Web renderers.
                         It's just nice to see them together.
                     </p>
 
                     <br>
-                    <strong>3. VIDEO</strong><br>
+                    <div class="button_title">
+                        <strong>3. VIDEO</strong><br>
+                    </div>
                     <p style="padding-left: 20px">
-                        This button will insert video player and start video
-                        with Thorens Map in action.
+                        This button inserts a video player
+                        and starts the video with Thorens Map in action.
                     </p>
 
                 </div>
@@ -152,8 +158,8 @@ class Page_1 extends PageContent{
     loadMapJavaScript ( ) {
 
         let callBack = ( ) => this.onMapScriptLoaded ( )
-
         new LoadZipJavaScript ( 'map3d.js.zip', "map3d.js", callBack )
+
     }
 
     onMapScriptLoaded ( ) {

@@ -7,7 +7,26 @@ class LoadZipJavaScript {
         this.js_file_name = js_file_name
         this.callBack = callBack
 
-        this.start ()
+        let exist = this.isInsertedAlready ( )
+
+        if ( exist )   this.reload ()
+        else           this.start ()
+    }
+
+    reload () {
+
+        console.log("Reloading Thorens component");
+
+        let thorensApp = new ThorensAppClass ( )
+        thorens_map = thorensApp.map
+        this.callBack ()
+    }
+
+    isInsertedAlready ( ) {
+
+        let scriptNode = document.getElementById("thorens_script")
+        if ( scriptNode == null)  return false
+        return true
     }
 
     start ( ) {
@@ -52,6 +71,7 @@ class LoadZipJavaScript {
 
         script.type = "text/javascript";
         script.appendChild(document.createTextNode(text + "; onZipCallBack (  )"));
+        script.setAttribute ( "id", "thorens_script" )
         document.body.appendChild(script)
     }
 }

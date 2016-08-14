@@ -71,7 +71,7 @@ class Page_1 extends PageContent{
                 <div id="div_buttons_desc" style="text-align: left; margin: 10px">
 
                     <br>
-                    <div class="button_title">
+                    <div id="button_here" class="button_title">
                         <strong>1. INSERT THORENS MAP HERE</strong><br>
                     </div>
                     <p style="padding-left: 20px">
@@ -88,7 +88,7 @@ class Page_1 extends PageContent{
                     </p>
 
                     <br>
-                    <div class="button_title">
+                    <div id="button_react" class="button_title">
                         <strong>2. THORENS-REACT LIVE MAP</strong><br>
                     </div>
                     <p style="padding-left: 20px">
@@ -97,7 +97,7 @@ class Page_1 extends PageContent{
                     </p>
 
                     <br>
-                    <div class="button_title">
+                    <div id="button_video" class="button_title">
                         <strong>3. VIDEO</strong><br>
                     </div>
                     <p style="padding-left: 20px">
@@ -118,16 +118,26 @@ class Page_1 extends PageContent{
     setEvents ( ) {
 
         this.a_insert_below     = document.getElementById("a_insert_below")
+        this.button_here        = document.getElementById("button_here")
+
         this.a_goto_react       = document.getElementById("a_goto_react")
+        this.button_react        = document.getElementById("button_react")
+
         this.a_insert_video     = document.getElementById("a_insert_video")
+        this.button_video        = document.getElementById("button_video")
 
         this.map_div            = document.getElementById("map_div")
         this.div_buttons_desc   = document.getElementById("div_buttons_desc")
 
 
         this.a_insert_below.onclick = () => this.onClickInsert_below ( )
+        this.button_here.onclick    = () => this.onClickInsert_below ( )
+
         this.a_goto_react.onclick = () => this.onClickReact ( )
+        this.button_react.onclick = () => this.onClickReact ( )
+
         this.a_insert_video.onclick = () => this.onClickVideo ( )
+        this.button_video.onclick   = () => this.onClickVideo ( )
     }
 
     onClickInsert_below ( ) {

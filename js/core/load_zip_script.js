@@ -44,15 +44,17 @@ class LoadZipJavaScript {
 
                 } else {
 
-                    JSZip.loadAsync(data).
-                    then(
+                    JSZip.loadAsync(data).then (
 
-                        function (zip) {
+                        (zip) => {
 
-                            return zip.file( js_file_name ).async("string");
+                            return zip.file( js_file_name ).async("string")
                         }
-                    ).
-                    then( ( text )=> insertScript ( text ) )
+
+                    ).then (
+
+                        ( text )=> insertScript ( text )
+                    )
                 }
             }
         )

@@ -1523,3 +1523,31 @@ orange_red {
    background: #1b435e;
    color: #0cc;
    }
+
+.button_title {
+
+    color: #DDDDDD;
+    padding: 10px;
+    display: inline-block;
+    border-top: 1px solid #96d1f8;
+    background: rgba(0, 142, 142, 0.1);
+
+    -webkit-box-shadow: rgba( 0, 0, 0, 0.4) 2px 3px 0;
+    -moz-box-shadow:    rgba(0, 0, 0, 0.4) 2px 3px 0;
+    box-shadow:         rgba(0, 0, 0, 0.4) 2px 3px 0;
+    text-shadow:        rgba(0, 0, 0, .4) 2px 3px 0;
+}
+
+.button_title:hover {
+
+    background: rgba(0, 142, 142, 0.8);
+
+   -webkit-box-shadow: rgba( 0, 0, 0, 0.3) 5px 6px 0;
+   -moz-box-shadow:    rgba(0, 0, 0, 0.3) 5px 6px 0;
+   box-shadow:         rgba(0, 0, 0, 0.3) 5px 6px 0;
+
+   }
+.button_title:active {
+
+    color: #FFFFFF;
+}

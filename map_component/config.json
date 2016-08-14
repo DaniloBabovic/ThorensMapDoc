@@ -12,7 +12,7 @@
     "showNavigationButtons" : true,
     "showSnowAnimation" : false,
     "showWireframeButton" : true,
-    "showKeyboardOnStart" : true,
+    "showKeyboardOnStart" : false,
 
     "heightOffset" : -2400,
     "scale_14" : 0.20,

@@ -13,8 +13,10 @@ siteURL +=  "https://raw.githubusercontent.com/DaniloBabovic/"
 siteURL +=  "ThorensMapDoc/master/"
 siteGen.siteURL = siteURL
 
+
+
 siteGen.disqus = new DisqusManager ( )
-siteGen.disqus.enabled = true
+siteGen.disqus.enabled = false
 
 if ( siteGen.sourceIsFile == true ) {
 
@@ -22,8 +24,8 @@ if ( siteGen.sourceIsFile == true ) {
 }
 
 function setGlobalSitePath ( _sitePath) { sitePath = _sitePath }
-const setZipCallBack = ( _callBack ) => { zipCallBack = _callBack }
-const onZipCallBack = (  ) => { zipCallBack () }
+const setZipCallBack = ( callBack ) => { _zipCallBack = callBack }
+const onZipCallBack = (  ) => { _zipCallBack () }
 
 siteGen.createHeader(   logoPath,
                         'url("img/earth_background.png")',
@@ -40,3 +42,5 @@ new Page_5(siteGen)
 new Page_6(siteGen)
 
 siteGen.showPage()
+
+window.scrollTo(0, 0);

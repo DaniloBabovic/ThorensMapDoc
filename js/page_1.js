@@ -65,10 +65,41 @@ class Page_1 extends PageContent{
             <div    id="map_div"
                     style=" display: inline-block;
                             width: 1100px; height: 600px;
-                            background-color: rgba(0, 142, 142, 0.42);
+                            background-color: rgba(0, 142, 142, 0.68);
                             color: #FFFFFF;"
             >
+                <div id="div_buttons_desc" style="text-align: left; margin: 10px">
 
+                    <br>
+                    <strong>1. INSERT THORENS MAP HERE</strong><br>
+                    <p style="padding-left: 20px">
+                        This button will insert map component into this view.
+                        All map Javascript files are packed into one .zip file.
+                        That file will be automaticaly downloaded, unpacked,
+                        added as scrit into document and insert map component into
+                        div with id "map_id".
+                        <br>
+
+                        This is recomended way to use Thorens map component.
+
+
+                    </p>
+
+                    <br>
+                    <strong>2. THORENS-REACT LIVE MAP</strong><br>
+                    <p style="padding-left: 20px">
+                        WebGL (three.js) and React are the fastest Web renderers.<br>
+                        It's just nice to see them together.
+                    </p>
+
+                    <br>
+                    <strong>3. VIDEO</strong><br>
+                    <p style="padding-left: 20px">
+                        This button will insert video player and start video
+                        with Thorens Map in action.
+                    </p>
+
+                </div>
             </div>
 
         </div>
@@ -80,11 +111,13 @@ class Page_1 extends PageContent{
 
     setEvents ( ) {
 
-
-
         this.a_insert_below     = document.getElementById("a_insert_below")
         this.a_goto_react       = document.getElementById("a_goto_react")
         this.a_insert_video     = document.getElementById("a_insert_video")
+
+        this.map_div            = document.getElementById("map_div")
+        this.div_buttons_desc   = document.getElementById("div_buttons_desc")
+
 
         this.a_insert_below.onclick = () => this.onClickInsert_below ( )
         this.a_goto_react.onclick = () => this.onClickReact ( )
@@ -126,6 +159,7 @@ class Page_1 extends PageContent{
     onMapScriptLoaded ( ) {
 
         window.scrollTo(0, 230);
-
+        this.map_div.removeChild(this.div_buttons_desc)
+        this.div_buttons_desc.innerHTML = ""
     }
 }

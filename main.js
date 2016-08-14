@@ -16,7 +16,7 @@ siteGen.siteURL = siteURL
 
 
 siteGen.disqus = new DisqusManager ( )
-siteGen.disqus.enabled = false
+siteGen.disqus.enabled = true
 
 if ( siteGen.sourceIsFile == true ) {
 

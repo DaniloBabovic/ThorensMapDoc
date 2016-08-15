@@ -1,3 +1,11 @@
+document.onThorensLoaded = function ( _map, _ThorensAppClass ) {
+
+    thorens_map = _map
+    ThorensAppClass = _ThorensAppClass
+}
+
+const setZipCallBack = ( callBack ) => { _zipCallBack = callBack }
+const onZipCallBack = (  ) => { _zipCallBack () }
 
 class LoadZipJavaScript {
 

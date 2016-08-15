@@ -25,14 +25,7 @@ if ( siteGen.sourceIsFile == true ) {
 }
 
 function setGlobalSitePath ( _sitePath) { sitePath = _sitePath }
-function onThorensLoaded ( _map, _ThorensAppClass ) {
 
-    thorens_map = _map
-    ThorensAppClass = _ThorensAppClass
-}
-
-const setZipCallBack = ( callBack ) => { _zipCallBack = callBack }
-const onZipCallBack = (  ) => { _zipCallBack () }
 
 thorens_map = null
 

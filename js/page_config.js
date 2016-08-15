@@ -1,4 +1,4 @@
-class Page_2 extends PageContent{
+class Page_config extends PageContent{
 
     constructor(siteGen) {
 

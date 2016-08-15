@@ -1,4 +1,4 @@
-class Page_3 extends PageContent{
+class Page_marker extends PageContent{
 
     constructor(siteGen) {
 

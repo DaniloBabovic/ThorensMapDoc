@@ -1,4 +1,4 @@
-class Page_4 extends PageContent{
+class Page_tile_tool extends PageContent{
 
     constructor(siteGen) {
 

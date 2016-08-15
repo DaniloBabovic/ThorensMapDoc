@@ -1,9 +1,8 @@
-class Page_1 extends PageContent{
+class Page_live extends PageContent{
 
     constructor(siteGen) {
 
         super(siteGen)
-        //this.page.makeTitle("Live", 'rgba(0, 142, 142, 0.42)')
 
         let disqus_identifier = "thorens_map_doc_live"
         let newTitle = "Thorens Live Page"
@@ -112,7 +111,6 @@ class Page_1 extends PageContent{
         `
         post.addText(title)
         this.page.onReadyForInsert = () => this.setEvents ( )
-
     }
 
     setEvents ( ) {
@@ -142,7 +140,6 @@ class Page_1 extends PageContent{
 
     onClickInsert_below ( ) {
 
-        //console.log ( "onClickInsert_below" )
         this.a_insert_below.style.opacity = "0.4";
         this.a_insert_below.onclick = null
         this.loadMapJavaScript ( )
@@ -150,11 +147,9 @@ class Page_1 extends PageContent{
 
     onClickReact ( ) {
 
-
         alert ('Work In Progress, check out for few hours.')
         this.a_goto_react.style.opacity = "0.4";
         this.a_goto_react.onclick = null
-
     }
 
     onClickVideo ( ) {
@@ -162,14 +157,12 @@ class Page_1 extends PageContent{
         alert ('Work In Progress, check out for few hours.')
         this.a_insert_video.style.opacity = "0.4";
         this.a_insert_video.onclick = null
-
     }
 
     loadMapJavaScript ( ) {
 
         let callBack = ( ) => this.onMapScriptLoaded ( )
         new LoadZipJavaScript ( 'map3d.js.zip', "map3d.js", callBack )
-
     }
 
     onMapScriptLoaded ( ) {

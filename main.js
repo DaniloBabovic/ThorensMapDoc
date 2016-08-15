@@ -17,7 +17,7 @@ let siteURL = location.protocol + '//' + location.host;
 siteGen.siteURL = siteURL
 
 siteGen.disqus = new DisqusManager ( )
-siteGen.disqus.enabled = true
+siteGen.disqus.enabled = false
 
 if ( siteGen.sourceIsFile == true ) {
 
@@ -42,13 +42,13 @@ siteGen.createHeader(   logoPath,
                         280,
                         228
                     )
-new Page_0(siteGen)
-new Page_1(siteGen)
-new Page_2(siteGen)
-new Page_3(siteGen)
-new Page_4(siteGen)
-new Page_5(siteGen)
-new Page_6(siteGen)
+new Page_home(siteGen)
+new Page_live(siteGen)
+new Page_config(siteGen)
+new Page_marker(siteGen)
+new Page_tile_tool(siteGen)
+new Page_tile_elevation(siteGen)
+new Page_tile_support(siteGen)
 
 siteGen.showPage()
 

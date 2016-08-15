@@ -44,6 +44,8 @@ class Page_tile_support extends PageContent{
 
         t('Documentation download:'); l('GitHub', 'https://github.com/DaniloBabovic/ThorensMapDoc');nl()
 
+        t('Thorens - React example:'); l('GitHub', 'https://github.com/DaniloBabovic/ThorensReactExample');nl()
+
         t('EditThreeJS - 3D Editor for starting three.js project:'); l('GitHub', 'https://github.com/DaniloBabovic/EditThreeJS');nl()
 
         t('Small projects that have led to this:'); l('PlaygroundThreed', 'http://playgroundthreed.appspot.com/doc/index.html');nl()

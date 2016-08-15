@@ -147,9 +147,9 @@ class Page_live extends PageContent{
 
     onClickReact ( ) {
 
-        alert ('Work In Progress, check out for few hours.')
-        this.a_goto_react.style.opacity = "0.4";
-        this.a_goto_react.onclick = null
+        let url = 'http://htmlpreview.github.io/?https://github.com/DaniloBabovic/ThorensReactExample/blob/master/index.html'
+        var win = window.open(url, '_blank');
+        win.focus();
     }
 
     onClickVideo ( ) {

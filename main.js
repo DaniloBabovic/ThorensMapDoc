@@ -8,16 +8,12 @@ siteGen = new SiteGen([
 let logoPath = 'img/mapalchemy_logo_2016.svg'
 logoPath = null // TODO make logo
 
-// let siteURL = "http://htmlpreview.github.io/?"
-// siteURL +=  "https://raw.githubusercontent.com/DaniloBabovic/"
-// siteURL +=  "ThorensMapDoc/master/"
-
 let siteURL = location.protocol + '//' + location.host;
 
 siteGen.siteURL = siteURL
 
 siteGen.disqus = new DisqusManager ( )
-siteGen.disqus.enabled = false
+siteGen.disqus.enabled = true
 
 if ( siteGen.sourceIsFile == true ) {
 

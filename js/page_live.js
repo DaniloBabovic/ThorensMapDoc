@@ -9,6 +9,7 @@ class Page_live extends PageContent{
 
         this.setTitle ( )
         this.thorens ( )
+        this.setInstruction ( )
 
         this.disqus ( disqus_identifier, newTitle )
     }
@@ -170,5 +171,30 @@ class Page_live extends PageContent{
         window.scrollTo(0, 230);
         this.map_div.removeChild(this.div_buttons_desc)
         this.div_buttons_desc.innerHTML = ""
+    }
+
+    setInstruction ( ) {
+
+        let post = this.page.makePostBase()
+
+        let title = `
+        <header role="banner">
+        <div class="grid"
+            style="
+            background-color: rgba(0, 142, 142, 0.42);
+            margin-top: 0px;
+            max-width: 100%;
+            height: 60px;
+            text-align: center;
+            text-size: 28px;
+            padding: 15px;
+            color: #FFFFFF
+        ">
+            To learn how to navigate click on the keyboard button when map loads.
+            <div class="clear"></div>
+        </div>
+        </header>
+        `
+        post.addText(title)
     }
 }

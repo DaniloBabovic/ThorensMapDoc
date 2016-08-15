@@ -181,16 +181,32 @@ class Page_live extends PageContent{
         <header role="banner">
         <div class="grid"
             style="
-            background-color: rgba(0, 142, 142, 0.42);
+
             margin-top: 0px;
             max-width: 100%;
-            height: 60px;
+            height: 100%;
             text-align: center;
             text-size: 28px;
             padding: 15px;
-            color: #FFFFFF
+            color: #FFFFFF;
+
         ">
-            To learn how to navigate click on the keyboard button when map loads.
+            <div
+                style="
+                display: inline-block;
+                width: 1100px;
+                padding: 40px;
+                padding-left: 20px;
+                text-align: left;
+                background-color: rgba(0, 142, 142, 0.42);"
+                text-size: 28px;
+            >
+                <strong>Note:</strong><br><br>
+                To learn how to navigate click on the keyboard button when map loads.
+                <br>
+                Use RIGHT mouse drag for panning for start.
+
+            </div>
             <div class="clear"></div>
         </div>
         </header>

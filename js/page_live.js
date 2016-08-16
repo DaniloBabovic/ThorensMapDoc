@@ -148,8 +148,8 @@ class Page_live extends PageContent{
 
     onClickReact ( ) {
 
-        let url = 'http://htmlpreview.github.io/?https://cdn.rawgit.com/DaniloBabovic/ThorensReactExample/master/index.html'
-        //let url = 'http://htmlpreview.github.io/?https://github.com/DaniloBabovic/ThorensReactExample/blob/master/index.html'
+        //let url = 'http://htmlpreview.github.io/?https://cdn.rawgit.com/DaniloBabovic/ThorensReactExample/master/index.html'
+        let url = 'http://htmlpreview.github.io/?https://github.com/DaniloBabovic/ThorensReactExample/blob/master/index.html'
         var win = window.open(url, '_blank');
         win.focus();
     }

@@ -64,7 +64,7 @@ class Page_live extends PageContent{
 
             <div    id="map_div"
                     style=" display: inline-block;
-                            width: 1100px; height: 600px;
+                            width: 1100px; height: 580px;
                             background-color: rgba(0, 142, 142, 0.68);
                             color: #FFFFFF;"
             >

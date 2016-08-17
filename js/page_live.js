@@ -7,6 +7,9 @@ class Page_live extends PageContent{
         let disqus_identifier = "thorens_map_doc_live"
         let newTitle = "Thorens Live Page"
 
+        this.div_buttons_desc = null
+        this.youtube          = null
+
         this.setTitle ( )
         this.thorens ( )
         this.setInstruction ( )
@@ -143,6 +146,7 @@ class Page_live extends PageContent{
 
         this.a_insert_below.style.opacity = "0.4";
         this.a_insert_below.onclick = null
+        this.removePrevious ( )
         this.loadMapJavaScript ( )
     }
 
@@ -156,9 +160,20 @@ class Page_live extends PageContent{
 
     onClickVideo ( ) {
 
-        alert ('Work In Progress, check out for few hours.')
+        //https://www.youtube.com/watch?v=70LfrN8zUoM
+        let url = 'https://www.youtube.com/embed/70LfrN8zUoM'
         this.a_insert_video.style.opacity = "0.4";
         this.a_insert_video.onclick = null
+        this.removePrevious ( )
+
+        let html = `<iframe width="100%" height="100%"
+src="https://www.youtube.com/embed/70LfrN8zUoM">
+</iframe>`
+        this.youtube = document.createElement("iframe");
+        this.youtube.style["width"] = "100%"
+        this.youtube.style["height"] = "100%"
+        this.youtube.setAttribute("src", url)
+        this.map_div.appendChild ( this.youtube )
     }
 
     loadMapJavaScript ( ) {
@@ -167,11 +182,29 @@ class Page_live extends PageContent{
         new LoadZipJavaScript ( 'map3d.js.zip', "map3d.js", callBack )
     }
 
+    removePrevious() {
+
+        if (this.div_buttons_desc != null) {
+            this.map_div.removeChild(this.div_buttons_desc)
+            this.div_buttons_desc.innerHTML = ""
+            this.div_buttons_desc = null
+        }
+
+        if (this.youtube != null) {
+
+            this.map_div.removeChild(this.youtube)
+            this.youtube.innerHTML = ""
+            this.youtube = null
+        }
+        while (this.map_div.firstChild) {
+            this.map_div.removeChild(this.map_div.firstChild);
+        }
+    }
+
     onMapScriptLoaded ( ) {
 
         window.scrollTo(0, 230);
-        this.map_div.removeChild(this.div_buttons_desc)
-        this.div_buttons_desc.innerHTML = ""
+
     }
 
     setInstruction ( ) {

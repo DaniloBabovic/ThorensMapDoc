@@ -16,4 +16,4 @@ Thorens Map Documentation
 
 #### Live ####
 
-* [Thorens Map Documentation](https://htmlpreview.github.com/?https://raw.githubusercontent.com/DaniloBabovic/ThorensMapDoc/master/index.html) hosted on GitHub
+* [Thorens Map Documentation](http://bit.ly/ThorensDoc)

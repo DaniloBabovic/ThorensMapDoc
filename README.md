@@ -16,4 +16,4 @@ Thorens Map Documentation
 
 #### Live ####
 
-* [Thorens Map Documentation](http://bit.ly/ThorensDoc)
+* [Thorens Map Documentation](https://map_doc.mapalchemy.com)
